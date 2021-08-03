@@ -1,0 +1,136 @@
+table {
+  width: 90%;
+  alignment: center;
+}
+//
+//html, body { height: 100%; }
+//body {
+//  margin: 0;
+//  font-family: Roboto, "Helvetica Neue", sans-serif;
+//}
+//
+//.hide{
+//  display: none;
+//}
+//
+//mat-footer-row mat-footer-cell {
+//  justify-content: center;
+//  font-style: italic;
+//}
+//
+//.spacer1{
+//  margin-right: 30px;
+//  margin-left: 30px;
+//  margin-bottom: 30px;
+//}
+//
+///*   Filter Controls      */
+//.search-div{
+//  margin:10px ;
+//}
+//.search-form-field{
+//  width: 60%;
+//  margin-left: 10px;
+//  padding: 5px 10px;
+//  background-color: #f5f5f5;
+//  border-radius: 5px;
+//}
+//.search-form-field div.mat-form-field-underline{
+//  display: none;
+//}
+//.search-form-field div.mat-form-field-infix{
+//  border-top: 0px;
+//}
+//.search-form-field div.mat-form-field-wrapper{
+//  padding-bottom: 0px;
+//}
+//.search-form-field div.mat-form-field-suffix button{
+//  height: 32px;
+//  width: 32px;
+//}
+/////toolbar///
+div.containert{
+  margin: 0px 40px;
+}
+
+//.fill-remaining-space{
+//  flex: 1 1 auto;
+//}
+//
+///////////////////////////////////
+.spacer {
+  margin-top: 30px;
+}
+.spacerh {
+  margin-right: 10px;
+}
+.spacer1{
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.hide{
+  display: none;
+}
+
+mat-footer-row mat-footer-cell {
+  justify-content: center;
+  font-style: italic;
+}
+
+
+/*   Filter Controls      */
+.search-div {
+  margin:10px ;
+}
+.search-form-field {
+  width: 60%;
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+.search-form-field div.mat-form-field-underline{
+  display: none;
+}
+.search-form-field div.mat-form-field-infix{
+  border-top: 0px;
+}
+.search-form-field div.mat-form-field-wrapper{
+  padding-bottom: 0px;
+}
+.search-form-field div.mat-form-field-suffix button{
+  height: 32px;
+  width: 32px;
+}
+
+// end of filter
+
+form.normal-form{
+  margin: 10px;
+}
+.controles-container{
+  width: 100%;
+  padding: 5%;
+}
+
+.controles-container > * {
+  width: 100%;
+}
+.button-row button{
+  margin: 5px;
+}
+
+.btn-dialog-close {
+  width: 45px;
+  min-width: 0px !important;
+  height: 40px;
+  padding: 0px !important;
+}
+
+.fill-remaining-space{
+  flex: 0.5 0.5 auto;
+}

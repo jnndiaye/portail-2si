@@ -1,0 +1,181 @@
+<div class="row" *ngIf="!serviceSecurity.kc.authenticated">
+  <div class="col-lg-12 slider-container">
+    <ngb-carousel *ngIf="images">
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="images[0]" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <p class="pub-message"><b>BIENVENUE DANS LE PORTAIL DE 2si.</b></p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="images[1]" alt="Random second slide" >
+        </div>
+        <div class="carousel-caption" >
+          <p class="pub-message"><b>BIENVENUE DANS LE PORTAIL DE 2si.</b></p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="images[2]" alt="Random third slide" >
+        </div>
+        <div class="carousel-caption" >
+          <p class="pub-message"><b>BIENVENUE SUR LE SITE DE 2si.</b></p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+  <!-- PRIX ET DISTINCTIONS -->
+  <div class="col-lg-12">
+    <div class="wrapper row3">
+      <main class="hoc container clear">
+        <section>
+
+          <div class="center btmspace-80">
+            <h2 class="heading underline font-x2">PRIX ET DISTINCTIONS</h2>
+          </div>
+
+          <ul class="nospace1 group overview btmspace-80">
+
+            <li class="one_quarter">
+              <article><a href="#"><i class="fas fa-trophy"></i></a>
+                <h6 class="heading"></h6><br/><br/>
+                <p><a href="#">2011</a>:Meilleure entreprise en ingénierie logicielle dans l'espace UEMOA</p>
+                <footer><a routerLink="/apropos/prixdistinctions">Voir Plus &raquo;</a></footer>
+              </article>
+            </li>
+
+            <li class="one_quarter">
+              <article><a href="#"><i class="fas fa-trophy"></i></a>
+                <h6 class="heading"></h6><br/><br/>
+                <p><a href="#">2012</a>:Awards de l'innovation - Institut  Africain de Manangement</p>
+                <footer><a routerLink="/apropos/prixdistinctions">Voir Plus &raquo;</a></footer>
+              </article>
+            </li>
+
+            <li class="one_quarter">
+              <article><a href="#"><i class="fas fa-trophy"></i></a>
+                <h6 class="heading"></h6><br/><br/>
+                <p><a href="#">2011</a>:Top 50 HelSinki des meilleures entreprises sur 80 pays</p>
+                <footer><a routerLink="/apropos/prixdistinctions">Voir Plus &raquo;</a></footer>
+              </article>
+            </li>
+
+            <li class="one_quarter">
+              <article><a href="#"><i class="fas fa-trophy"></i></a>
+                <h6 class="heading"></h6><br/><br/>
+                <p><a href="#">2014</a>: Jambars-Tech Awards dans la catégorie " Meilleur éditeur de logiciel</p>
+                <footer><a routerLink="/apropos/prixdistinctions">Voir Plus &raquo;</a></footer>
+              </article>
+            </li>
+          </ul>
+
+          <div class="clear"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- MOT DE LA DIRECTRICE -->
+  <div class="col-lg-12">
+   <div class="about-header">
+     <br />
+      <h2>MOT DE LA DIRECTRICE GENERALE</h2>
+      <div class="item">
+        <article class="center">
+          <img src="../assets/images/demo/backgrounds/photoDirectrice.jpeg"/>
+        </article>
+      </div>
+     <br />
+     <div class="row">
+       <div class="col-md-6 ml-auto mr-auto text-justify">
+         <p>
+           2SI est une société spécialisée dans la mise en place de plateforme numériques à grandes valeurs ajoutées pour les administrations,
+           le secteur privé et le grand public.
+           Crée en 2001 par des ingénieurs polytechniciens,
+           2SI est aujourd’hui devenu un groupe avec deux filiales :
+         </p>
+         <ul>
+           <li>
+             Prose : qui s’occupe des plateformes de suivi et d’évaluation des programmes;
+           </li>
+           <li>
+             KIWI : qui s’occupe des services à valeur ajoutée sur le mobile, en partenariat avec Orange Sénégal.
+           </li>
+         </ul>
+         <p>
+           2SI se positionne comme un des leaders dans ce domaine en Afrique de l’Ouest et son siège se trouve au Sénégal mais elle intervient aujourd’hui dans 12 pays de la CEDEAO.
+           Son objectif est de couvrir les 16 pays de la CEDEAO, en nouant des partenariats forts, grâce à une solide expérience et à la compréhension des défis propres à chacun de nos clients.
+           Son ambition est d’être le partenaire privilégié de ses clients dans les métiers du conseil et des services dans le domaine du numérique.
+           Le groupe 2SI s’active dans une large gamme de domaines d’activités que sont l’ingénierie logicielle, le suivi évaluation, le service à valeur ajoutée sur le mobile, la dématérialisation, l’Intelligence Artificielle, le e-commerce la gestion des files d’attente et la formation.
+           2SI a deux plateforme phares :
+         </p>
+          <ul>
+            <li>
+              e-Sygmap plateforme de gestion des marchés publics avec des services pour les prestataires mais aussi pour les autorités contractantes,
+            </li>
+            <li>
+              e-transport plateforme de gestion du transport destinée aux usagers et acteurs du transport urbain,
+            </li>
+          </ul>
+         <br />
+       </div>
+     </div>
+    </div>
+  </div>
+</div>
+
+<div id="images" *ngIf="serviceSecurity.kc.authenticated" >
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12 col-sm-12">
+        <div class="row">
+
+          <div class="col-md-6 col-sm-6">
+            <div class="row">
+              <div class="col-md-6  col-sm-6">
+                <img src="../assets/images/demo/backgrounds/Admin_AssaneNiang.png" class="img-thumbnail img-responsive" alt="Rounded Image">
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <span class="images-title">Assane Niang</span><br />
+                <span class="images-title">Développeur</span><br />
+                <button type="button" class="btn btn-info"><mat-icon>create</mat-icon>Modifier</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6">
+
+            <button type="button" class="btn btn-primary" routerLink="/produit">
+              <mat-icon>list</mat-icon>
+              <span class="d-none d-md-inline" >
+                GERER LES PRODUITS</span>
+            </button><br /><br />
+
+            <button type="button" class="btn btn-primary">
+              <mat-icon>list</mat-icon>
+              <span class="d-none d-md-inline" >
+                GERER LES SERVICES</span>
+            </button><br /><br />
+
+            <button type="button" class="btn btn-primary">
+              <mat-icon>people</mat-icon>
+              <span class="d-none d-md-inline" >
+                GESTION DES UTILISATEURS</span>
+            </button><br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+

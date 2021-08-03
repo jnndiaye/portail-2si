@@ -1,0 +1,25 @@
+<div *ngIf="!serviceSecurity.kc.authenticated">
+  <div>
+    <app-header></app-header>
+  </div>
+  <div >
+    <div>
+      <router-outlet></router-outlet>
+      <script src="./assets/layout/scripts/jquery.mobilemenu.js"></script>
+    </div>
+  <app-footer></app-footer>
+  </div>
+</div>
+
+<div *ngIf="serviceSecurity.kc.authenticated">
+  <div>
+    <app-header-admin></app-header-admin>
+  </div>
+  <div >
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+<!--    <app-footer></app-footer>-->
+  </div>
+</div>
+

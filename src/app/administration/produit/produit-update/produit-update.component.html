@@ -1,0 +1,80 @@
+<!--<mat-toolbar>-->
+<!--  <span>Nouveau Contact</span>-->
+<!--  <span class="fill-remaining-space"></span>-->
+<!--  <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabindex="-1"><mat-icon>clear</mat-icon></button>-->
+<!--</mat-toolbar>-->
+<!--<form  [formGroup]="produitService.produitForm" class="normal-form">-->
+<!--  <mat-grid-list cols="1" rowHeight="300px">-->
+<!--    <mat-grid-tile>-->
+<!--      <div class="controles-container">-->
+<!--        <input  type="hidden" formControlName="$key"/>-->
+
+<!--        <mat-form-field>-->
+<!--          <input matInput placeholder="Libelle*" formControlName="libelle" [(ngModel)]="produit.libelle"/>-->
+<!--          <mat-error *ngIf="produitService.produitForm.">Ce champ est obligatoire.</mat-error>-->
+<!--        </mat-form-field>-->
+<!--        <mat-form-field>-->
+<!--          <input matInput placeholder="Description*" formControlName="description" [(ngModel)]="produit.description"/>-->
+<!--          <mat-error>Ce champ est obligatoire.</mat-error>-->
+<!--        </mat-form-field>-->
+
+<!--        <div class="button-row">-->
+<!--          <button mat-raised-button color="primary" type="submit" [disabled]="produitService.produitForm.invalid" (click)="saveProduit(produit-->
+
+<!--          )">Submit</button>-->
+<!--          <button mat-raised-button color="warn" (click)="onClear()">Clear</button>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </mat-grid-tile>-->
+<!--&lt;!&ndash;    <mat-grid-tile>&ndash;&gt;-->
+<!--&lt;!&ndash;      <div class="controles-container">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <mat-form-field >&ndash;&gt;-->
+<!--&lt;!&ndash;          <input matInput [matDatepicker]="picker" formControlName="dateNaissance" placeholder="Date de Naissance" [(ngModel)]="produit.libelle"/>&ndash;&gt;-->
+<!--&lt;!&ndash;          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>&ndash;&gt;-->
+<!--&lt;!&ndash;          <mat-datepicker #picker></mat-datepicker>&ndash;&gt;-->
+<!--&lt;!&ndash;        </mat-form-field>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <mat-form-field>&ndash;&gt;-->
+<!--&lt;!&ndash;          <input matInput placeholder="Téléphone"  formControlName="tel" type="number" [(ngModel)]="contact.tel"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        </mat-form-field>&ndash;&gt;-->
+<!--&lt;!&ndash;        &ndash;&gt;-->
+
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </mat-grid-tile>&ndash;&gt;-->
+<!--  </mat-grid-list>-->
+<!--</form>-->
+
+
+<mat-toolbar>
+  <span>{{produitService.produitForm.controls['id'].value?"MODIFIER LE PRODUIT":"AJOUTER UN PRODUIT"}}</span>
+  <span class="fill-remaining-space"></span>
+  <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabindex="-1"><mat-icon>clear</mat-icon></button>
+</mat-toolbar>
+<form  [formGroup]="produitService.produitForm" class="normal-form">
+  <mat-grid-list cols="1" rowHeight="300px">
+    <mat-grid-tile>
+      <div class="controles-container">
+        <input  type="hidden" formControlName="id"/>
+
+        <mat-form-field>
+          <input matInput placeholder="Libelle*" formControlName="libelle"/>
+          <mat-error >Ce champ est obligatoire.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Description*" formControlName="description"/>
+          <mat-error>Ce champ est obligatoire.</mat-error>
+        </mat-form-field>
+
+        <div class="button-row">
+          <button mat-raised-button color="primary" type="submit" [disabled]="produitService.produitForm.invalid" (click)="saveProduit(produit
+
+          )">Submit</button>
+          <button mat-raised-button color="warn" (click)="onClear()">Clear</button>
+        </div>
+
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>
